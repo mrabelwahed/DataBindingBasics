@@ -2,7 +2,9 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data class="Item">
-
+       <variable
+           name="temp"
+           type="com.ramadan_apps.databindingbasics.TempratureData"/>
     </data>
 
     <LinearLayout
@@ -11,7 +13,9 @@
 
         <android.support.v7.widget.AppCompatAutoCompleteTextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@{temp.celisus}"
+            />
     </LinearLayout>
 
 
